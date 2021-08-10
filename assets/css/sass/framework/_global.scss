@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-dark;
+  color: $color-light;
+  margin: 0;
+  font-family: $primary-font-family;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: $font-bold;
+  padding-bottom: 0;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding: $section-padding 0;
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: 1.2rem;
+  }
+}

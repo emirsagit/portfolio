@@ -1,0 +1,28 @@
+.my-services {
+    background-color: $color-accent;
+    background-image: url("../img/services-bg.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    padding: $section-padding 5%;
+    text-align: center;
+    color: #fff;
+}
+
+.service {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
+    max-width: 400px;
+}
+
+@media (min-width: 992px) {
+    .services {
+        display: flex;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
+}
