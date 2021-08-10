@@ -1,0 +1,41 @@
+.section__title--intro {
+  text-align: left;
+}
+
+.intro > .section__title::after {
+  content: none;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 1;
+    box-shadow: $img-shadow;
+  }
+
+  .section__title--intro {
+    grid-area: title;
+  }
+
+  .section__subtitle--intro {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    text-align: right;
+    position: relative;
+    left: -2em;
+    width: calc(100% + 2em);
+  }
+}

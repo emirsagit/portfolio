@@ -1,0 +1,67 @@
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1,
+.h1-size {
+  font-size: $h1-size;
+  margin-bottom: 0;
+  color: $color-white;
+}
+h2,
+.h2-size {
+  font-size: $h2-size;
+}
+h3,
+.h3-size {
+  font-size: $h3-size;
+}
+p,
+.p-size {
+  font-size: $p-size;
+}
+
+.section__title {
+  margin-bottom: 0.2em;
+  text-align: center;
+  position: relative;
+}
+
+.section__title::after {
+  display: block;
+  text-align: center;
+  content: "";
+  background-color: $color-accent;
+  width: 3em;
+  height: 0.1em;
+  margin: 0.2em auto 1em auto;
+}
+
+.section__title--intro {
+  font-weight: $font-regular;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: $h3-size;
+  position: relative;
+  background-color: $color-accent;
+  padding: 0.2em 0.5em;
+  color: $color-dark;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  font-family: $secondary-font-family;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section__title--intro strong {
+  display: block;
+}
